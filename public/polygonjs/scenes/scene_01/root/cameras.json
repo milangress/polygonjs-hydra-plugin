@@ -1,0 +1,14 @@
+{
+	"type": "geo",
+	"nodes": {
+		"perspectiveCamera1": {
+			"type": "perspectiveCamera",
+			"params": {
+				"position": [3.3, 3.3, 3.3]
+			}
+		}
+	},
+	"flags": {
+		"display": true
+	}
+}

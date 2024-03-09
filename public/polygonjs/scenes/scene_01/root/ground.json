@@ -1,0 +1,25 @@
+{
+	"type": "geo",
+	"nodes": {
+		"material1": {
+			"type": "material",
+			"params": {
+				"material": "../MAT/meshStandardBuilder1"
+			},
+			"inputs": ["box1"],
+			"flags": {
+				"display": true
+			}
+		},
+		"box1": {
+			"type": "box",
+			"params": {
+				"sizes": [9.98, 1, 9.98],
+				"center": [0, -0.5, 0]
+			}
+		}
+	},
+	"flags": {
+		"display": true
+	}
+}
