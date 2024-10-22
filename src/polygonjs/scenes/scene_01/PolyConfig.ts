@@ -1,11 +1,18 @@
 import { PolyEngine } from "@polygonjs/polygonjs/dist/src/engine/Poly";
 import { PolyScene } from "@polygonjs/polygonjs/dist/src/engine/scene/PolyScene";
 
+// @ts-ignore
+import {HydraCustomCopNode} from "src/engine/nodes/sop/HydraTexture.js"
+
+
 export function configurePolygonjs(poly: PolyEngine) {
 	// we have a `console.log` here to avoid errors like 'poly is declared but not used' at build time
 	if (false) {
 		console.log("poly", poly);
 	}
+
+	poly.nodesRegister.register(HydraCustomCopNode, 'hydra');
+
 	//
 	//
 	// You can configure Polygonjs here:
